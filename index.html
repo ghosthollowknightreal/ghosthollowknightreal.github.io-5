@@ -1,4 +1,11 @@
-<h1> Hello, world! </h1>
-<input type="text" id="myTextbox">
-<script> const textbox = document.getElementById("myTextbox");
-let answer = "";</script>
+<input type="text" id="Answer">
+<script> let blarp;
+const textBox = document.getElementById("Answer");
+textBox.addEventListener('input', function() {
+  blarp = textBox.value
+}
+                         if (blarp === OpenSesame) {
+  console.log("Good job!");
+} else {
+  console.log("Sesame");
+}</script>
