@@ -1,17 +1,16 @@
 <head>
-<script>
-  function myFunction() {
-    document.getElementById("Blarp").innerHTML = "This, is a crafting table!";
-  }
-  function blarpfunction() {
-    document.getElementById("Blarp").innerHTML = "This, is text!";
-  }
-</script>  
+<title> Testing on and off</title>
 </head>
 <body>
-  <h1> Javascript test.</h1>
-  <p id="Blarp"> This, is text! </p>
-  <button type="button" onclick="myFunction()"> This changes text. </button>
-  <br>
-  <button type="button" onclick="blarpfunction()"> This changes it back. </button>
+  <button id="myButton" onclick="toggleButton()">OFF</button>
+  <script>
+    function toggleButton() {
+      const button = document.getElementById("myButton");
+      if (button.innerHTML === "OFF") {
+        button.innerHTML = "ON";
+      } else {
+        button.innerHTML = "OFF";
+      }
+    }
+  </script>
 </body>
