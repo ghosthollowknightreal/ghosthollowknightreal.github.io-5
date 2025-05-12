@@ -1,11 +1,12 @@
-<input type="text" id="Answer"> <input type="submit">
-<script> let blarp;
-const textBox = document.getElementById("Answer");
-textBox.addEventListener('input', function() {
-  blarp = textBox.value
-}
-                         if (blarp === OpenSesame) {
-  console.log("Good job!");
-} else {
-  console.log("Sesame");
-}</script>
+<head>
+<script>
+  function myFunction() {
+    document.getElementById("Blarp").innerHTML = "This, is a crafting table!";
+  }
+</script>  
+</head>
+<body>
+  <h1> Javascript test.</h1>
+  <p id="Blarp"> This, is text! </p>
+  <button type="button" onclick="myFunction()"> This changes text. </button>
+</body>
